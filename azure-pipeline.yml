@@ -5,16 +5,16 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  azureSubscription: 'sc-pipeline' # Este es un nombre que debe cambiar al que crearon.
-  location: 'eastus2'
-  resourceGroupName: 'MiGrupoRecursos' # Este es un nombre que debe cambiar al que crearon.
-  virtualNetworkName: 'VNet-taller-DevOps'
-  subnetName: 'Subnet-taller-DevOps'
+  azureSubscription: 'sc-infra-pipeline' # Este es un nombre que debe cambiar al que crearon.
+  location: 'eastus'
+  resourceGroupName: 'DEVOPS_001A_GRUPO09_eastus' # Este es un nombre que debe cambiar al que crearon.
+  virtualNetworkName: 'VNet-Grupo09-eastus'
+  subnetName: 'Subnet-Grupo09-eastus'
   addressPrefix: '10.0.0.0/16'
   subnetPrefix: '10.0.1.0/24'
-  securityGroupName: 'NSG-taller-DevOps'
-  publicIpName: 'PublicIP-2-taller-DevOps'
-  vmName: 'VM-2-taller-DevOps'
+  securityGroupName: 'NSG-Grupo09-eastus'
+  publicIpName: 'PublicIP-Grupo09-eastus'
+  vmName: 'VM-Grupo09-eastus'
   vmSize: 'Standard_B1s'  # SKU disponible en eastus2
   adminUsername: 'azureuser'
   adminPassword: 'Password1234$'  # Contraseña en texto plano (ajustar según necesidad)
